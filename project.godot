@@ -12,7 +12,11 @@ config_version=5
 
 config/name="COGS Witch Game"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://sprites/debug.svg"
+
+[autoload]
+
+Global="*uid://6jqinj87yxxg"
 
 [physics]
 
