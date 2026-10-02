@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cbwu6q53lgrmp"]
 
 [ext_resource type="Texture2D" uid="uid://dr670uj6v7w2h" path="res://sprites/placeholder/placeholder_player.png" id="1_eqqp1"]
-[ext_resource type="Script" uid="uid://b63xtxgp6io76" path="res://scripts/player.gd" id="1_ykyjo"]
+[ext_resource type="Script" uid="uid://b63xtxgp6io76" path="res://scripts/characters/player.gd" id="1_ykyjo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ykyjo"]
 atlas = ExtResource("1_eqqp1")
@@ -32,3 +32,8 @@ sprite_frames = SubResource("SpriteFrames_uxov2")
 position = Vector2(0, 43)
 rotation = -1.5707964
 shape = SubResource("CapsuleShape2D_eqqp1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=544530668]
+offset = Vector2(0, -100)
+position_smoothing_enabled = true
+position_smoothing_speed = 20.0
