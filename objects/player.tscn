@@ -1,3 +1,34 @@
 [gd_scene format=3 uid="uid://cbwu6q53lgrmp"]
 
+[ext_resource type="Texture2D" uid="uid://dr670uj6v7w2h" path="res://sprites/placeholder/placeholder_player.png" id="1_eqqp1"]
+[ext_resource type="Script" uid="uid://b63xtxgp6io76" path="res://scripts/player.gd" id="1_ykyjo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykyjo"]
+atlas = ExtResource("1_eqqp1")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uxov2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykyjo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eqqp1"]
+height = 44.0
+
 [node name="Player" type="CharacterBody2D" unique_id=1220930068]
+script = ExtResource("1_ykyjo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1134476737]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_uxov2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1146771595]
+position = Vector2(0, 43)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_eqqp1")
