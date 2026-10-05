@@ -57,7 +57,7 @@ text = "Potions"
 custom_minimum_size = Vector2(190, 100)
 layout_mode = 2
 disabled = true
-text = "Movement"
+text = "Stealth"
 
 [node name="BackButton" type="Button" parent="CenterContainer/MenuContent" unique_id=938419944]
 custom_minimum_size = Vector2(0, 56)
