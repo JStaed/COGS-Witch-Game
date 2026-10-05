@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://bb7hqptd1e3qh"]
 
 [ext_resource type="Script" uid="uid://7luklfpql3rp" path="res://scripts/audio/music.gd" id="1_1hait"]
-[ext_resource type="AudioStream" uid="uid://k3l8sf3w7w1p" path="res://audio/music/placeholder_music.wav" id="1_rylt1"]
+[ext_resource type="AudioStream" uid="uid://k3l8sf3w7w1p" path="res://audio/music/placeholder_music.wav" id="1_vaeil"]
 
 [node name="MusicPlayer" type="AudioStreamPlayer" unique_id=962243103]
-stream = ExtResource("1_rylt1")
+stream = ExtResource("1_vaeil")
 script = ExtResource("1_1hait")
+
+[node name="Crossfade" type="AudioStreamPlayer" parent="." unique_id=1444294929]
+stream = ExtResource("1_vaeil")

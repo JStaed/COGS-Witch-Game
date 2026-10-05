@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bg3accufhb6ix"]
 
+[ext_resource type="Script" path="res://scripts/menus/save_select_menu.gd" id="1_save_select"]
+
 [node name="SaveSelectMenu" type="Control" unique_id=3320986]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_save_select")
+metadata/music_id = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuContent" type="VBoxContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Title" type="Label" parent="CenterContainer/MenuContent"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "Begin Your Adventure"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="CenterContainer/MenuContent"]
+layout_mode = 2
+text = "Save slots are not available yet. Start a new game to explore the current prototype."
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="CenterContainer/MenuContent"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Start New Game"
+
+[node name="BackButton" type="Button" parent="CenterContainer/MenuContent"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Back to Main Menu"

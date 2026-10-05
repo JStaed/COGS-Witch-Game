@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqm5d5aw56lgr"
+path="res://.godot/imported/(Intro Backup)The_Mountain Spooky Stories.mp3-a66fa49626afaec8fc95a4ad9ec1cb94.mp3str"
+
+[deps]
+
+source_file="res://audio/music/(Intro Backup)The_Mountain Spooky Stories.mp3"
+dest_files=["res://.godot/imported/(Intro Backup)The_Mountain Spooky Stories.mp3-a66fa49626afaec8fc95a4ad9ec1cb94.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

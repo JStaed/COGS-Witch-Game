@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://daoqtl046bmsb"]
 
+[ext_resource type="Script" uid="uid://bsk0343waimgf" path="res://scripts/menus/main_menu.gd" id="1_main_menu"]
+
 [node name="MainMenu" type="Control" unique_id=815261527]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,44 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_main_menu")
+metadata/music_id = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1057023174]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuButtons" type="VBoxContainer" parent="CenterContainer" unique_id=1340569305]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="CenterContainer/MenuButtons" unique_id=1022518222]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Witch Loving Witch"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="CenterContainer/MenuButtons" unique_id=296701507]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Play"
+
+[node name="OptionsButton" type="Button" parent="CenterContainer/MenuButtons" unique_id=2085081302]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Options"
+
+[node name="CreditsButton" type="Button" parent="CenterContainer/MenuButtons" unique_id=1928532077]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/MenuButtons" unique_id=705723341]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Quit"

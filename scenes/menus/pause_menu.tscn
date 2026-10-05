@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://1ul0072pgtw8"]
+
+[ext_resource type="Script" uid="uid://bo2gyo45t6ale" path="res://scripts/menus/pause_menu.gd" id="1_pause_menu"]
+[ext_resource type="PackedScene" uid="uid://b0shce367rwcv" path="res://scenes/menus/settings_menu.tscn" id="2_settings_menu"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1611970302]
+process_mode = 3
+visible = false
+script = ExtResource("1_pause_menu")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=1589777817]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1568681738]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuPanel" type="PanelContainer" parent="CenterContainer" unique_id=1790157053]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+
+[node name="MenuButtons" type="VBoxContainer" parent="CenterContainer/MenuPanel" unique_id=1950391647]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="CenterContainer/MenuPanel/MenuButtons" unique_id=65759183]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="CenterContainer/MenuPanel/MenuButtons" unique_id=541644743]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Resume"
+
+[node name="OptionsButton" type="Button" parent="CenterContainer/MenuPanel/MenuButtons" unique_id=1395507821]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Options"
+
+[node name="MainMenuButton" type="Button" parent="CenterContainer/MenuPanel/MenuButtons" unique_id=631104587]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Main Menu"
+
+[node name="SettingsMenu" parent="CenterContainer" unique_id=624406557 instance=ExtResource("2_settings_menu")]
+visible = false
+layout_mode = 2

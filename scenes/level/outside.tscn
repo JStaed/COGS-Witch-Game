@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://dyvecn6mfrt3o"]
 
 [ext_resource type="PackedScene" uid="uid://cbwu6q53lgrmp" path="res://objects/player.tscn" id="1_chbu6"]
+[ext_resource type="PackedScene" uid="uid://1ul0072pgtw8" path="res://scenes/menus/pause_menu.tscn" id="2_pause_menu"]
 
 [node name="Node2D" type="Node2D" unique_id=1786508055]
+metadata/music_id = 1
 
 [node name="Player" parent="." unique_id=1220930068 instance=ExtResource("1_chbu6")]
+
+[node name="PauseMenu" parent="." unique_id=1931817217 instance=ExtResource("2_pause_menu")]

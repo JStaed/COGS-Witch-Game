@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://t3em3v7yew4m"]
+[gd_scene load_steps=2 format=3 uid="uid://t3em3v7yew4m"]
+
+[ext_resource type="PackedScene" path="res://scenes/menus/pause_menu.tscn" id="1_pause_menu"]
 
 [node name="Inside" type="Control" unique_id=487046928]
 layout_mode = 3
@@ -7,3 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/music_id = 1
+
+[node name="PauseMenu" parent="." instance=ExtResource("1_pause_menu")]

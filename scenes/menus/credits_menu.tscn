@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cal2vtbm5i11o"]
 
+[ext_resource type="Script" uid="uid://dhaev80f2wu0r" path="res://scripts/menus/credits_menu.gd" id="1_credits"]
+
 [node name="CreditsMenu" type="Control" unique_id=254420481]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,47 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_credits")
+metadata/music_id = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=154413579]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuContent" type="VBoxContainer" parent="CenterContainer" unique_id=677401322]
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="Title" type="Label" parent="CenterContainer/MenuContent" unique_id=2080655930]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "Credits"
+horizontal_alignment = 1
+
+[node name="GameTitle" type="Label" parent="CenterContainer/MenuContent" unique_id=360197319]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Witch Loving Witch"
+horizontal_alignment = 1
+
+[node name="CreditText" type="Label" parent="CenterContainer/MenuContent" unique_id=259666084]
+layout_mode = 2
+text = "August Tice (Ghost) - Audio & SFX
+Celeste Eback - UI Design
+Jane Staed - Lead Programmer
+Kitty McKinney - Sprites and Game Assets
+
+riley inscoe - Moral Support (or something like that?)
+
+Made in Godot Engine."
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="CenterContainer/MenuContent" unique_id=1416419429]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Back to Main Menu"

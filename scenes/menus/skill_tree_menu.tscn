@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bfc63l033par1"]
 
+[ext_resource type="Script" uid="uid://dkncqoamtp2b6" path="res://scripts/menus/skill_tree_menu.gd" id="1_skill_tree"]
+
 [node name="SkillTreeMenu" type="Control" unique_id=1373822107]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,57 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_skill_tree")
+metadata/music_id = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1705599361]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuContent" type="VBoxContainer" parent="CenterContainer" unique_id=1454133503]
+custom_minimum_size = Vector2(640, 0)
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Title" type="Label" parent="CenterContainer/MenuContent" unique_id=1140894751]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "Witchcraft"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="CenterContainer/MenuContent" unique_id=558839771]
+layout_mode = 2
+text = "Skill progression is coming soon."
+horizontal_alignment = 1
+
+[node name="SkillOptions" type="HBoxContainer" parent="CenterContainer/MenuContent" unique_id=1549852637]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Spellcraft" type="Button" parent="CenterContainer/MenuContent/SkillOptions" unique_id=1122889869]
+custom_minimum_size = Vector2(190, 100)
+layout_mode = 2
+disabled = true
+text = "Spellcraft"
+
+[node name="Potions" type="Button" parent="CenterContainer/MenuContent/SkillOptions" unique_id=1587584642]
+custom_minimum_size = Vector2(190, 100)
+layout_mode = 2
+disabled = true
+text = "Potions"
+
+[node name="Movement" type="Button" parent="CenterContainer/MenuContent/SkillOptions" unique_id=2124803482]
+custom_minimum_size = Vector2(190, 100)
+layout_mode = 2
+disabled = true
+text = "Movement"
+
+[node name="BackButton" type="Button" parent="CenterContainer/MenuContent" unique_id=938419944]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Back to Game"
