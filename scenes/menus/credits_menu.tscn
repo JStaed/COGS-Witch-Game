@@ -39,7 +39,8 @@ horizontal_alignment = 1
 
 [node name="CreditText" type="Label" parent="CenterContainer/MenuContent" unique_id=259666084]
 layout_mode = 2
-text = "August Tice (Ghost) - Audio & SFX
+text = "Allie - Background Design
+August Tice (Ghost) - Audio & SFX
 Celeste Eback - UI Design
 Jane Staed - Lead Programmer
 Kitty McKinney - Sprites and Game Assets
